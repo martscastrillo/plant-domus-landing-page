@@ -1,8 +1,65 @@
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+.footer {
+  padding-top: 65px;
+  padding-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-dark;
+  font-family: $font-secondary;
+  text-align: center;
+  color: $color-white;
+  gap: 30px 32px;
+  .heart {
+    color: $color-detail;
+  }
+  @media all and (min-width: 768px) {
+    text-align: start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-between;
+    padding:50px 39px 40px 39px;
+    gap: 30px;
+  }
+  @media all and (min-width: 1280px) {
+    padding:50px 370px 40px 370px;
+    gap: 30px 31px;
+  }
+  &__group {
+    text-transform: uppercase;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    @media all and (min-width: 768px) {
+  
+      width: 210px;
+    }
+   &--element {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      gap: 12px;
+      @media all and (min-width: 768px) {
+        margin-right: 39px;
+        align-items: flex-start;
+        background-color: green;
+        order: 1;
+      }
+    }
+  }
+}
+
+.lifooter {
+  list-style: none;
+  text-decoration: none;
+  padding: 5px;
+&--link {
+  padding: 2px;
+  /*    animation: bounce;
+animation-duration: 2s; */
+  color: $color-white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: left;
+}
 }
