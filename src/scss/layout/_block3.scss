@@ -6,29 +6,7 @@
   text-align: center;
   background-color: $color-extra;
   padding-top: 29px;
-  &__arrow {
-    /* padding: 2px; */
-    justify-self: center;
-    position: absolute;
-    transform: translatey(50%);
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 37px;
-    height: 37px;
-    border-radius: 50%;
-    background-color: $color-white;
-    /*  sombra enlace flecha */
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    @media all and (min-width: 768px) {
-      width: 45px;
-      height: 45px;
-    }
-    &--link {
-      padding: 20px;
-    }
-  }
+  
   @media all and (min-width: 768px) {
     padding-top: 36px;
   }

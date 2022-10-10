@@ -39,11 +39,15 @@
     border: 2px solid #f26002;
     color: #f26002;
     background-color: #ffffff;
-    /*     &:hover {
-      background-color: $color-dark;
-      transform: scale(2, 2);
-     
-    } */ }
+    display: inline-block; }
+    .button.go:hover {
+      transform: translateX(30px);
+      transition: transform 2s;
+      border: 2px solid #0271bc;
+      color: #0271bc;
+      background-color: #8ccbea; }
+    .button.go:not(:hover) {
+      transition: transform 2s; }
     @media all and (min-width: 768px) {
       .button.go {
         padding: 10px 33px 10px 33px; } }
@@ -60,7 +64,10 @@
     background-color: #f26002; }
     .button.more:hover {
       background-color: #304268;
-      transform: scale(1.1, 1.1); }
+      transform: scale(1.1, 1.1);
+      transition: transform 2s; }
+    .button.more:not(:hover) {
+      transition: transform 2s; }
     @media all and (min-width: 768px) {
       .button.more {
         padding: 10px 43px 10px 43px;
@@ -68,9 +75,6 @@
     @media all and (min-width: 1280px) {
       .button.more {
         padding: 10px 62px 10px 62px; } }
-
-.go:hover {
-  color: blue; }
 
 .headerdiv {
   display: flex;
@@ -203,27 +207,6 @@
   text-align: center;
   background-color: #eff9ff;
   padding-top: 29px; }
-  .section__arrow {
-    /* padding: 2px; */
-    justify-self: center;
-    position: absolute;
-    transform: translatey(50%);
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 37px;
-    height: 37px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    /*  sombra enlace flecha */
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
-    @media all and (min-width: 768px) {
-      .section__arrow {
-        width: 45px;
-        height: 45px; } }
-    .section__arrow--link {
-      padding: 20px; }
   @media all and (min-width: 768px) {
     .section {
       padding-top: 36px; } }
@@ -271,7 +254,80 @@
       grid-gap: 26.2px;
       margin: 43px 85px 0px 85px; } }
 
+.footerbigbox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.arrow {
+  /* padding: 2px; */
+  justify-self: center;
+  position: absolute;
+  transform: translatey(-50%);
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  /*  sombra enlace flecha */
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */ }
+  .arrow:hover {
+    animation: rotation 20s  linear; }
+  @media all and (min-width: 768px) {
+    .arrow {
+      width: 45px;
+      height: 45px; } }
+  .arrow--link {
+    padding: 20px; }
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+@keyframes rotation {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 .footer {
+  width: 100vw;
   padding: 65px 15px 36px 15px;
   display: flex;
   flex-direction: column;
@@ -327,8 +383,6 @@
   padding: 5px; }
   .lifooter--link {
     padding: 2px;
-    /*    animation: bounce;
-animation-duration: 2s; */
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
