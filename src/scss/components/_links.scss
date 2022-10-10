@@ -21,7 +21,7 @@
   font-size: 1.25rem; /* 20px */
   font-weight: 500;
   border-radius: 22.5px;
- 
+
   &.go {
     padding: 10px 25px 10px 25px;
     border: 2px solid $color-detail;
@@ -30,13 +30,13 @@
     display: inline-block;
     &:hover {
       transform: translateX(30px);
-     
+
       transition: transform 2s;
       border: 2px solid $color-main;
       color: $color-main;
       background-color: $color-light;
     }
-    &:not(:hover){
+    &:not(:hover) {
       transition: transform 2s;
     }
     @media all and (min-width: 768px) {
@@ -45,7 +45,6 @@
     @media all and (min-width: 1280px) {
       padding: 10px 67px 10px 68px;
     }
-   
   }
   &.more {
     padding: 10px 30px 10px 30px;
@@ -60,7 +59,7 @@
       transform: scale(1.1, 1.1);
       transition: transform 2s;
     }
-    &:not(:hover){
+    &:not(:hover) {
       transition: transform 2s;
     }
     @media all and (min-width: 768px) {
@@ -71,8 +70,4 @@
       padding: 10px 62px 10px 62px;
     }
   }
-  
-
 }
-
-    
