@@ -6,7 +6,6 @@
   text-align: center;
   background-color: $color-extra;
   padding-top: 29px;
-  padding-bottom: 60px;
   &__arrow {
     /* padding: 2px; */
     justify-self: center;
@@ -20,35 +19,35 @@
     height: 37px;
     border-radius: 50%;
     background-color: $color-white;
-   /*  sombra enlace flecha */
+    /*  sombra enlace flecha */
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     @media all and (min-width: 768px) {
       width: 45px;
       height: 45px;
     }
-    &--link{
+    &--link {
       padding: 20px;
     }
-  
   }
   @media all and (min-width: 768px) {
     padding-top: 36px;
-    }
-    @media all and (min-width: 1280px) {
-      padding-top: 61px;
-    }
+  }
+  @media all and (min-width: 1280px) {
+    padding-top: 61px;
+  }
 }
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat (3, 1fr);
   grid-gap: 44px;
   margin: 49px 68px 0px 68px;
- 
+
   &__h3 {
     line-height: 30px;
     font-family: $font-main;
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
     font-weight: bold;
     @media all and (min-width: 768px) {
       font-size: 24px;
@@ -56,18 +55,27 @@
   }
   &__p {
     font-family: $font-secondary;
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
     font-weight: normal;
     line-height: 30px;
+    min-width: 180px;
     @media all and (min-width: 768px) {
       font-size: 20px;
+      min-width: 210px;
+    }
+    @media all and (min-width: 1280px) {
+      min-width: 353px;
     }
   }
   @media all and (min-width: 768px) {
     grid-gap: 30px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  margin: 38px 38px 0px 38px;
-  
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    margin: 38px 38px 0px 38px;
+  }
+  @media all and (min-width: 1280px) {
+    grid-gap: 26.2px;
+
+    margin: 43px 85px 0px 85px;
   }
 }

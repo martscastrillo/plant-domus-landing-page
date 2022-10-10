@@ -1,11 +1,10 @@
-
 .headerdiv {
   display: flex;
   align-items: flex-end;
   background-image: url("../images/cover.jpeg");
-  background-size:cover;
-  background-position: center; 
-  height: 100vw;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,31 +12,38 @@
   color: $color-white;
   text-align: center;
   padding: 35px;
-  
   &__h1 {
     word-spacing: 100vw;
-    font-family:   $font-main;
+    font-family: $font-main;
     text-transform: uppercase;
-    font-size: 42px;
-    margin-bottom: 20px;
-   /*  sombra al texto */
-    text-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    @media all and (min-width: 768px){
-      margin-bottom: 20px; 
+    font-weight: bold;
+    font-size: 2.625rem; /* 42px */
+    /*  sombra al texto */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    @media all and (min-width: 768px) {
+      font-size: 5rem; /* 80px */
+      margin-bottom: 20px;
+    }
+    @media all and (min-width: 1280px) {
+      font-size: 6.25rem; /* 100px */
     }
   }
   &__h3 {
     margin-bottom: 35.2px;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
     font-family: $font-secondary;
-    @media all and (min-width: 768px){
-      margin-bottom: 12px; 
+    @media all and (min-width: 768px) {
+      max-width: 320.1px;
+      margin-bottom: 12px;
+      font-size: 1.5rem; /* 24px */
     }
-   
+    @media all and (min-width: 1280px) {
+      min-width: 440px;
+      margin-bottom: 34px;
+    }
   }
   &__arrow {
-   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,21 +56,8 @@
       width: 45px;
       height: 45px;
     }
-    &--link{
+    &--link {
       padding: 20px;
     }
-  
-  }
-  
-}
-/* .headerspan{
-  
-  @media all and (min-width: 1280px) {
-
-    word-spacing: 110vw;
-
-  
-   
   }
 }
- */

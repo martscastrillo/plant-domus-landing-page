@@ -1,14 +1,11 @@
 @import "core/reset";
 @import "core/variables";
-@import 'components/links';
-@import 'layout/header';
-@import 'layout/block2';
-@import 'layout/block3';
-@import 'layout/footer';
+@import "components/links";
+@import "layout/header";
+@import "layout/block2";
+@import "layout/block3";
+@import "layout/footer";
 
-
-
-
-
-
-
+:root {
+  font-size: 16px;
+}

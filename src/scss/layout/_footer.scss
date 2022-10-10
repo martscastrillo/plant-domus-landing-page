@@ -1,6 +1,5 @@
 .footer {
-  padding-top: 65px;
-  padding-bottom: 36px;
+  padding: 65px 15px 36px 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,6 +8,7 @@
   text-align: center;
   color: $color-white;
   gap: 30px 32px;
+
   .heart {
     color: $color-detail;
   }
@@ -17,49 +17,53 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    align-content: space-between;
-    padding:50px 39px 40px 39px;
+    padding: 50px 39px 40px 39px;
     gap: 30px;
   }
   @media all and (min-width: 1280px) {
-    padding:50px 370px 40px 370px;
+    padding: 50px 370px 40px 370px;
     gap: 30px 31px;
+    justify-content: stretch;
   }
   &__group {
     text-transform: uppercase;
-    font-size: 16px;
+    line-height: 1.88;
+    font-size: 1rem; /* 16px */
     display: flex;
     flex-wrap: wrap;
     @media all and (min-width: 768px) {
-  
       width: 210px;
     }
-   &--element {
+    @media all and (min-width: 1280px) {
+      width: 159px;
+    }
+    &--element {
       display: flex;
       flex-direction: column;
-      font-size: 14px;
+      font-size: 0.875rem; /* 14px; */
       gap: 12px;
       @media all and (min-width: 768px) {
         margin-right: 39px;
         align-items: flex-start;
-        background-color: green;
-        order: 1;
+        order: -1;
       }
     }
   }
 }
-
 .lifooter {
   list-style: none;
   text-decoration: none;
   padding: 5px;
-&--link {
-  padding: 2px;
-  /*    animation: bounce;
+  &--link {
+    padding: 2px;
+    /*    animation: bounce;
 animation-duration: 2s; */
-  color: $color-white;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: left;
-}
+    color: $color-white;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: left;
+    &:hover {
+      color: $color-detail;
+    }
+  }
 }
