@@ -1,12 +1,10 @@
 .burger-box {
   z-index: 20;
-  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 2.375rem; /* 38px */
   height: 2.375rem; /* 38px */
-  background-color: $color-dark;
   position: fixed;
   background-color: $color-dark;
   @media all and (min-width: 768px) {
@@ -23,30 +21,25 @@
   font-size: 1.25rem; /* 20px */
   font-weight: 500;
   border-radius: 22.5px;
-  &:hover {
- /*    transform: scale(1.1, 1.1);
-    transition: width 1s, height 1s, transform 1s;
-    transition-timing-function: ease; */
-  }
+ 
   &.go {
     padding: 10px 25px 10px 25px;
     border: 2px solid $color-detail;
     color: $color-detail;
     background-color: $color-white;
-    color: $color-detail;
-    background-color: $color-white;
-    &:hover {
-      color: $color-white;
-      background-color: $color-detail;
-      transform: scale(1.1, 1.1);
-   
-    }
+
+/*     &:hover {
+      background-color: $color-dark;
+      transform: scale(2, 2);
+     
+    } */
     @media all and (min-width: 768px) {
       padding: 10px 33px 10px 33px;
     }
     @media all and (min-width: 1280px) {
       padding: 10px 67px 10px 68px;
     }
+   
   }
   &.more {
     padding: 10px 30px 10px 30px;
@@ -59,8 +52,7 @@
     &:hover {
       background-color: $color-dark;
       transform: scale(1.1, 1.1);
-      transition: width 1s, height 1s, transform 1s;
-      transition-timing-function: ease;
+    
     }
     @media all and (min-width: 768px) {
       padding: 10px 43px 10px 43px;
@@ -70,4 +62,10 @@
       padding: 10px 62px 10px 62px;
     }
   }
+  
+
 }
+.go:hover{  
+color: blue;
+} 
+    
