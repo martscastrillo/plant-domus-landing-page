@@ -47,13 +47,12 @@
   }
   @media all and (min-width: 768px) {
     grid-gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat (3, 1fr);
     grid-template-rows: 1fr;
     margin: 38px 38px 0px 38px;
   }
   @media all and (min-width: 1280px) {
     grid-gap: 26.2px;
-
     margin: 43px 85px 0px 85px;
   }
 }

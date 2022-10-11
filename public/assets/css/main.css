@@ -76,8 +76,6 @@
         padding: 10px 62px 10px 62px; } }
 
 .headerdiv {
-  display: flex;
-  align-items: flex-end;
   background-image: url("../images/cover.jpeg");
   background-size: cover;
   background-position: center;
@@ -245,7 +243,7 @@
   @media all and (min-width: 768px) {
     .grid {
       grid-gap: 30px;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat 3, 1fr;
       grid-template-rows: 1fr;
       margin: 38px 38px 0px 38px; } }
   @media all and (min-width: 1280px) {
@@ -260,7 +258,6 @@
   align-items: center; }
 
 .arrow {
-  /* padding: 2px; */
   justify-self: center;
   position: absolute;
   transform: translatey(-50%);
