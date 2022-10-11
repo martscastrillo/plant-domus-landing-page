@@ -30,7 +30,6 @@
     display: inline-block;
     &:hover {
       transform: translateX(30px);
-
       transition: transform 2s;
       border: 2px solid $color-main;
       color: $color-main;

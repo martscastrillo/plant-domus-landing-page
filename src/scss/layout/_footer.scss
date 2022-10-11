@@ -19,10 +19,8 @@
   background-color: $color-white;
   /*  sombra enlace flecha */
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  animation-name: bounce-2;
-  animation-timing-function: ease;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+  animation: bounce 2s ease infinite;
+ 
   @media all and (min-width: 768px) {
     width: 45px;
     height: 45px;
@@ -32,9 +30,9 @@
   }
 }
 
-@keyframes bounce-2 {
+@keyframes bounce {
   50% {
-    transform: translateY(-40px);
+    transform: translateY(-30px);
   }
 }
 

@@ -271,10 +271,7 @@
   background-color: #ffffff;
   /*  sombra enlace flecha */
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  animation-name: bounce-2;
-  animation-timing-function: ease;
-  animation-duration: 2s;
-  animation-iteration-count: infinite; }
+  animation: bounce 2s ease infinite; }
   @media all and (min-width: 768px) {
     .arrow {
       width: 45px;
@@ -282,9 +279,9 @@
   .arrow--link {
     padding: 20px; }
 
-@keyframes bounce-2 {
+@keyframes bounce {
   50% {
-    transform: translateY(-40px); } }
+    transform: translateY(-30px); } }
 
 .footer {
   width: 100vw;
