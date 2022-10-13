@@ -47,7 +47,7 @@
   }
   @media all and (min-width: 768px) {
     grid-gap: 30px;
-    grid-template-columns: repeat (3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     margin: 38px 38px 0px 38px;
   }

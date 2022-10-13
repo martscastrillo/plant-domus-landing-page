@@ -1,0 +1,20 @@
+.block4section{
+    width: 100vw;
+    background-color: $color-detail;   
+    display: none;
+    @media all and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        }
+}
+.h2{
+    text-align: center;
+     margin-bottom: 10px;
+ 
+}
+
+.block4display{
+    @media all and (min-width: 768px) {
+    display: flex;
+    }
+}
