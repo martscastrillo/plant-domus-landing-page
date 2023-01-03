@@ -11,10 +11,12 @@
   color: $color-white;
   text-align: center;
   padding: 35px;
+  
   &__h1 {
     word-spacing: 100vw;
-    font-family: $font-main;
+    font-family: $font-h1;
     text-transform: uppercase;
+    letter-spacing: 12px;
     font-weight: bold;
     font-size: 2.625rem; /* 42px */
     /*  sombra al texto */
@@ -51,12 +53,15 @@
     padding: 12px;
     border-radius: 50%;
     background-color: $color-white;
+    
     @media all and (min-width: 768px) {
       width: 45px;
       height: 45px;
     }
     &--link {
       padding: 20px;
+      
     }
+    
   }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,7 +14,7 @@
   height: 2.375rem;
   /* 38px */
   position: fixed;
-  background-color: #0271bc; }
+  background-color: #137634; }
   @media all and (min-width: 768px) {
     .burger-box {
       width: 2.688rem;
@@ -35,16 +36,13 @@
   border-radius: 22.5px; }
   .button.go {
     padding: 10px 25px 10px 25px;
-    border: 2px solid #f26002;
-    color: #f26002;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #4E3D42;
     display: inline-block; }
     .button.go:hover {
-      transform: translateX(30px);
-      transition: transform 2s;
-      border: 2px solid #0271bc;
-      color: #0271bc;
-      background-color: #8ccbea; }
+      background-color: #137634;
+      transform: scale(1.1, 1.1);
+      transition: transform 2s; }
     .button.go:not(:hover) {
       transition: transform 2s; }
     @media all and (min-width: 768px) {
@@ -60,9 +58,9 @@
     margin-left: auto;
     margin-right: auto;
     color: #ffffff;
-    background-color: #f26002; }
+    background-color: #137634; }
     .button.more:hover {
-      background-color: #304268;
+      background-color: #4E3D42;
       transform: scale(1.1, 1.1);
       transition: transform 2s; }
     .button.more:not(:hover) {
@@ -89,8 +87,9 @@
   padding: 35px; }
   .headerdiv__h1 {
     word-spacing: 100vw;
-    font-family: "Roboto Slab", serif;
+    font-family: "Aladin", cursive;
     text-transform: uppercase;
+    letter-spacing: 12px;
     font-weight: bold;
     font-size: 2.625rem;
     /* 42px */
@@ -152,7 +151,7 @@
   font-weight: normal;
   font-size: 0.875rem;
   /* 14px; */
-  color: #8ccbea;
+  color: #417c55;
   line-height: 30px;
   text-transform: capitalize; }
   @media all and (min-width: 1280px) {
@@ -162,7 +161,7 @@
 
 .h2 {
   text-transform: capitalize;
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Serif", serif©;
   font-size: 1.5rem;
   /* 24px */
   font-weight: bold;
@@ -202,7 +201,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   text-align: center;
-  background-color: #eff9ff;
+  background-color: #aed0bf;
   padding-top: 29px; }
   @media all and (min-width: 768px) {
     .section {
@@ -219,7 +218,7 @@
   margin: 49px 68px 0px 68px; }
   .grid__h3 {
     line-height: 30px;
-    font-family: "Roboto Slab", serif;
+    font-family: "Roboto Serif", serif©;
     font-size: 1.125rem;
     /* 18px */
     font-weight: bold; }
@@ -250,23 +249,6 @@
     .grid {
       grid-gap: 26.2px;
       margin: 43px 85px 0px 85px; } }
-
-.block4section {
-  width: 100vw;
-  background-color: #f26002;
-  display: none; }
-  @media all and (min-width: 768px) {
-    .block4section {
-      display: flex;
-      flex-direction: column; } }
-
-.h2 {
-  text-align: center;
-  margin-bottom: 10px; }
-
-@media all and (min-width: 768px) {
-  .block4display {
-    display: flex; } }
 
 .footerbigbox {
   position: relative;
@@ -306,13 +288,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #304268;
+  background-color: #4E3D42;
   font-family: "Roboto", sans-serif;
   text-align: center;
   color: #ffffff;
   gap: 30px 32px; }
   .footer .heart {
-    color: #f26002; }
+    color: #137634; }
   @media all and (min-width: 768px) {
     .footer {
       text-align: start;
@@ -362,7 +344,7 @@
     text-transform: uppercase;
     text-align: left; }
     .lifooter--link:hover {
-      color: #f26002; }
+      color: #137634; }
 
 :root {
   font-size: 16px; }

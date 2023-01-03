@@ -17,6 +17,7 @@
   height: 37px;
   border-radius: 50%;
   background-color: $color-white;
+ 
   /*  sombra enlace flecha */
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   animation: bounce 2s ease infinite;
@@ -27,6 +28,7 @@
   }
   &--link {
     padding: 20px;
+  
   }
 }
 

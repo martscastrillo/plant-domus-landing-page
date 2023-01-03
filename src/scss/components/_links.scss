@@ -6,7 +6,7 @@
   width: 2.375rem; /* 38px */
   height: 2.375rem; /* 38px */
   position: fixed;
-  background-color: #0271bc;
+  background-color: $color-detail;
   @media all and (min-width: 768px) {
     width: 2.688rem; /* 43px */
     height: 2.688rem; /* 43px */
@@ -24,16 +24,15 @@
 
   &.go {
     padding: 10px 25px 10px 25px;
-    border: 2px solid $color-detail;
-    color: $color-detail;
-    background-color: $color-white;
+   
+    color: $color-white;
+    background-color:$color-dark;
     display: inline-block;
+
     &:hover {
-      transform: translateX(30px);
+      background-color: $color-main;
+      transform: scale(1.1, 1.1);
       transition: transform 2s;
-      border: 2px solid $color-main;
-      color: $color-main;
-      background-color: $color-light;
     }
     &:not(:hover) {
       transition: transform 2s;
