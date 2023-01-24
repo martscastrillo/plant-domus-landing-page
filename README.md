@@ -19,6 +19,7 @@ Tienes a disposición en el proyecto, las dependencias necesarias para el empleo
 ### Desarrollo del código
 
 El proyecto, por ser una web funciona básicamente con html y css (más luego toda la gestión de las dependencias que se encargan nuestros amigos de npm)
+
 La página consta de:
 
 - Una imagen principal que ocupa de incio todo el alto del viewport, inlcuyendo un menú hamburguesa que va a estar presente a lo largo de toda la navegación en por la página, consta tambien de unos textos (el principal con una sutil sombra ) así como una flecha que nos hace navegar hacia una sección concreta de nuestra página.
@@ -31,3 +32,13 @@ La página consta de:
 Todas estas caracteristicas han sido adaptadas para que suponga de una buena experiencia por parte del usuario, siendo todo lo responsive posible, tomando como referencia 3 tipos de viewports genéricos 320px, 768px y 1280px en cada caso, de modo que se han ido aplicando las media queries correspondientes a cada tipo de viewport, tomando siempre como punto de partida **mobile first**
 
 Por otro lado, se han dispuesto hojas de reset para el proyecto, para una serie de caracteristicas evitarlas y partir de cero. También se han usado variables, para tanto el uso de colores como tipografías más repetidas a lo largo del proceso.
+
+Aquí puedes ver el desarrollo de la página realizado modo responsive, mobile first:
+<div style='display:flex'>
+<img height="400" alt="Captura de Pantalla 2023-01-24 a las 12 02 15" src="https://user-images.githubusercontent.com/112553001/214275820-032513b0-d936-4c37-8977-1d14d448ce7c.png">
+<img height="400" alt="Captura de Pantalla 2023-01-24 a las 12 02 26" src="https://user-images.githubusercontent.com/112553001/214275846-0f809d26-4745-45a5-a153-4e1b078d26cc.png">
+</div>
+<div style='display:flex'>
+<img width="600" alt="Captura de Pantalla 2023-01-24 a las 12 04 21" src="https://user-images.githubusercontent.com/112553001/214275593-eca700d3-a4f6-485b-b7ab-2e1d1eaf5134.png">
+<img width="600" alt="Captura de Pantalla 2023-01-24 a las 12 00 25" src="https://user-images.githubusercontent.com/112553001/214275805-245de816-4f99-4ae0-aa26-2d40b25ac82a.png">
+</div>
